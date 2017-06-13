@@ -1,0 +1,12 @@
+<?php
+defined('V3S3') or die('access denied');
+
+$object_max_size_mb = 16;
+
+$config['db'] = array(
+	'host'=>'<-MYSQL_HOST->', // change <-MYSQL_HOST->
+	'username'=>'<-MYSQL_USER->', // change <-MYSQL_USER->
+	'password'=>'<-MYSQL_PASS->', // change <-MYSQL_PASS->
+	'database'=>'<-MYSQL_DATABASE->', // change <-MYSQL_DATABASE->
+	'buffer_size'=>1024*1024*$object_max_size_mb,
+);
